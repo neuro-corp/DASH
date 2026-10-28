@@ -1,80 +1,92 @@
-# DASH - Coding Agent
+# DASH — Coding Agent
 
-![Dash — AI-powered developer tool](https://res.cloudinary.com/dznnkyjvh/image/upload/v1793004794/Blog/jxyq1orhgsllf6eu9gvh.png)
+![Dash — AI-powered terminal coding agent](https://res.cloudinary.com/dznnkyjvh/image/upload/v1793004794/Blog/jxyq1orhgsllf6eu9gvh.png)
 
-**An AI-powered terminal developer tool by Neuro Corporation.**
+**Dash is an AI-powered terminal coding agent that helps developers understand codebases, edit files, execute development tools, and manage coding tasks directly from the command line.**
 
-Dash brings AI-assisted development into your terminal, helping you work with code, explore projects, edit files, and execute development tasks through an interactive interface.
+Built by [Neuro](https://neuro-corp.com), Dash brings AI-assisted software development into your terminal with an interactive interface, project-aware context, and controlled tool execution.
 
-Built for developers who want an AI assistant integrated into their coding workflow.
+Use Dash to explore unfamiliar projects, troubleshoot errors, implement code changes, and streamline your development workflow.
 
-## Features
+## Why Dash?
 
-- **AI-powered development** — Work with an AI agent directly from your terminal.
-- **Project awareness** — Explore project files and reuse indexed workspace context.
-- **File operations** — Read files, make edits, apply multiple changes, and review diffs.
-- **Tool execution** — Let the agent use available tools to perform development tasks.
-- **Multiple AI providers** — Configure supported providers and select available models.
-- **Interactive terminal UI** — Follow conversations, tool results, task progress, and errors.
-- **Session management** — Work with saved conversations and session history.
-- **Task tracking** — Follow multi-step work through the task list.
-- **Approval controls** — Review actions that require user authorization.
-- **Token usage visibility** — Inspect available usage information to better understand AI consumption.
+Dash is designed for developers who want an AI coding assistant that works directly in their development environment.
 
-Features and provider availability may vary by version and configuration.
+- **AI coding agent** — Delegate software development tasks to an AI assistant in your terminal.
+- **Project-aware context** — Explore codebases and reuse indexed workspace information.
+- **Intelligent file operations** — Read, edit, and update project files with structured results.
+- **Tool execution** — Perform development tasks using the agent's available tools.
+- **Multiple AI providers** — Configure supported providers and choose available models.
+- **Interactive terminal interface** — Follow conversations, execution status, errors, and results.
+- **Session management** — Continue work using saved sessions and conversation history.
+- **Task tracking** — Monitor progress across multi-step coding tasks.
+- **Approval controls** — Review actions that require authorization.
+- **Token usage insights** — Understand available model usage and token-consumption information.
+
+Feature availability depends on the installed version, selected AI provider, and configuration.
 
 ## Installation
 
-### Prerequisites
+### Requirements
 
-- Node.js and npm, or another supported package-management setup.
+- Node.js and npm.
 - An API key for a supported AI provider.
 
-### Install Dash
-
-Install the published package globally:
+### Install with npm
 
 ```bash
 npm install -g @neuro.corp/dash
 ```
 
-Verify that the installation completed successfully:
-
-```bash
-dash --version
-```
-
-If your installed version does not support `--version`, check the package's documented CLI commands instead.
-
-## Getting Started
-
-Launch Dash from your terminal:
+### Start Dash
 
 ```bash
 dash
 ```
 
-For a project-specific session, open your terminal in the project directory before launching Dash.
+Launch Dash from the root directory of the project you want to work on.
 
-1. Start Dash.
-2. Configure your AI provider and API key using the available configuration interface.
-3. Select a supported model.
-4. Describe the development task you want the agent to perform.
-5. Review tool activity, proposed changes, and execution results.
-6. Verify the final changes in your project.
+## Getting Started
 
-**Tip:** Start with a small task, such as explaining a file or making a targeted code change, before asking the agent to modify multiple parts of a project.
+1. Install Dash globally.
+2. Launch Dash in your project directory.
+3. Configure a supported AI provider and API key.
+4. Select an available model.
+5. Describe the coding task you want to accomplish.
+6. Review the agent's tool activity, file changes, and results.
 
-## Example Tasks
+For the best results, provide a clear objective and specific acceptance criteria. Review important code changes and run the relevant tests before deploying them.
 
-You can use Dash to assist with development tasks such as:
+## What Can You Do with Dash?
+
+### Understand an Existing Codebase
+
+Ask Dash to explain your project's architecture, identify important modules, or trace how a feature works.
+
+### Debug Errors
+
+Investigate error messages, locate the relevant code, and explore potential fixes.
+
+### Write and Refactor Code
+
+Request targeted code changes, improvements to existing functions, and refactoring that preserves expected behavior.
+
+### Manage Development Tasks
+
+Use the agent's available tools to inspect files, make changes, and work through multi-step programming tasks.
+
+### Review Changes
+
+Inspect file modifications, tool results, and available execution or verification information before accepting the outcome.
+
+## Example Prompts
 
 ```text
 Explain the architecture of this project.
 ```
 
 ```text
-Find the source of this error and explain how to fix it.
+Find the cause of this error and suggest a fix.
 ```
 
 ```text
@@ -82,102 +94,71 @@ Refactor this function without changing its behavior.
 ```
 
 ```text
-Add input validation to the user registration endpoint.
+Add input validation to the registration endpoint.
 ```
 
 ```text
 Review the current changes and identify potential bugs.
 ```
 
-These are examples of tasks you can request from the agent; actual results depend on your configured model, available tools, and project context.
+Dash's results depend on the selected AI model, available tools, project context, and task requirements. AI-generated changes should be reviewed before use in production.
 
-## Configuration
+## Configuration and API Keys
 
-Dash requires a supported AI provider configuration to generate responses.
+Dash uses supported AI provider configurations to generate responses.
 
-Depending on the provider and version, configuration may include:
+Depending on the provider and version, you may configure:
 
-- Provider selection.
-- API credentials.
+- AI provider credentials.
 - Model selection.
 - Generation settings.
-- Agent behavior and execution settings.
+- Agent execution settings.
 
-Keep API keys private. Do not commit secrets to GitHub or include them in source code, logs, or public issue reports.
+Keep API keys private. Never publish credentials in repositories, screenshots, logs, or issue reports.
 
-Use the configuration mechanisms supported by your installed version. Consult the project documentation for provider-specific setup instructions.
+Refer to the official documentation for provider-specific configuration instructions.
 
-## Working with Projects
+## Releases
 
-For the best results:
+This repository is the official public GitHub presence for Dash releases and product information. It does not publish Dash's proprietary source code.
 
-- Launch Dash from the root of the project you want to work on.
-- Give the agent a clear objective and expected outcome.
-- Ask it to inspect relevant code before making changes.
-- Review proposed file modifications and diffs.
-- Run the relevant tests after code changes.
-- Check the actual results rather than relying only on the agent's final explanation.
+Visit the **[Releases](../../releases)** section to find available versions and release notes.
 
-AI-generated changes can contain errors. Review important changes before using them in production.
-
-## Development
-
-Dash is developed by Neuro Corporation.
-
-To work on the source code, clone the repository and inspect its package scripts and development documentation.
-
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_DIRECTORY>
-```
-
-Install dependencies using the package manager and lockfile specified by the project. For a Bun-based development setup, this may be:
-
-```bash
-bun install
-```
-
-Run the available development, test, and type-check commands defined in `package.json`.
+For release-specific installation requirements, compatibility information, and changes, consult the notes accompanying each version.
 
 ## Roadmap
 
-Dash is being developed with a focus on making AI-assisted development more reliable, transparent, and efficient.
+Dash is focused on making AI-assisted development more reliable, efficient, and transparent.
 
-Areas of ongoing improvement include:
+Areas of ongoing development include:
 
-- More reliable file editing and tool execution.
-- Better project and workspace context management.
-- Lower and more transparent token consumption.
-- Clearer tool status, verification, and error reporting.
+- More reliable AI tool execution and file editing.
+- Improved project context and workspace indexing.
+- Reduced token consumption and better usage visibility.
+- Clearer execution states and verification feedback.
 - Improved terminal UI/UX.
-- Better handling of long-running development tasks.
+- Better handling of complex, multi-step coding tasks.
 
-The roadmap may change as development progresses.
+The roadmap may evolve as development progresses.
 
-## Contributing
+## Support
 
-Contributions, bug reports, and suggestions are welcome.
+Need help with Dash or want to report an issue?
 
-Before submitting a contribution:
+**Email:** [support@neuro-corp.com](mailto:support@neuro-corp.com)
 
-1. Check existing issues to avoid duplicate reports.
-2. Describe the problem or proposed improvement clearly.
-3. Include reproducible steps for bug reports.
-4. Run relevant tests before submitting changes.
-5. Keep pull requests focused and easy to review.
+When requesting support, include your Dash version, operating system, relevant error messages, and steps to reproduce the problem. Never send API keys or other sensitive credentials.
 
-## Support and Feedback
+## License and Proprietary Software
 
-For issues, feature requests, or questions, use the repository's GitHub Issues page once it is enabled.
+Dash is proprietary software developed by Neuro. Its source code is not publicly distributed through this repository.
 
-When reporting a bug, include your Dash version, operating system, relevant error output, and steps to reproduce the issue. Never include API keys or other secrets.
+Access to releases does not grant permission to reproduce, modify, redistribute, or commercially exploit the software beyond the rights expressly granted by its applicable license or written authorization.
 
-## License
+See the repository's `LICENSE` file for the applicable terms.
 
-See the [LICENSE](LICENSE) file in this repository for the applicable license and terms of use.
+---
 
-## Built by Neuro Corporation
+**Dash by [Neuro](https://neuro-corp.com)**
 
-Dash is part of the work at **Neuro Corporation**, focused on building software and AI-powered developer tools.
-
-If Dash is useful to you, consider giving the repository a ⭐ on GitHub and sharing feedback to help improve the project.
+*Build, debug, and improve software with an AI coding agent in your terminal.*
