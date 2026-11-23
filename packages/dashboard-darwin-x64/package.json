@@ -1,0 +1,12 @@
+{
+  "name": "@neuro.corp/dash-darwin-x64",
+  "version": "1.1.8",
+  "description": "macOS x64 platform package for @neuro.corp/dash",
+  "license": "Apache-2.0",
+  "cpu": ["x64"],
+  "os": ["darwin"],
+  "files": [
+    "dist/dash",
+    "LICENSE"
+  ]
+}

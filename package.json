@@ -1,0 +1,44 @@
+{
+  "name": "@neuro.corp/dash",
+  "version": "1.1.8",
+  "description": "AI-powered terminal coding agent for developers",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "dash": "bin/dash.js"
+  },
+  "files": [
+    "bin/",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/neuro-corp/DASH",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuro-corp/DASH"
+  },
+  "bugs": {
+    "url": "https://github.com/neuro-corp/DASH/issues"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.tsx",
+    "build": "bun build ./src/index.tsx --compile --outfile ./dist/dash"
+  },
+  "optionalDependencies": {
+    "@neuro.corp/dash-win32-x64": "1.1.8",
+    "@neuro.corp/dash-darwin-x64": "1.1.8",
+    "@neuro.corp/dash-darwin-arm64": "1.1.8",
+    "@neuro.corp/dash-linux-x64": "1.1.8",
+    "@neuro.corp/dash-linux-arm64": "1.1.8"
+  },
+  "os": ["win32", "darwin", "linux"],
+  "cpu": ["x64", "arm64"],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@opentui/core": "0.6.8",
+    "highlight.js": "^10.7.3"
+  }
+}

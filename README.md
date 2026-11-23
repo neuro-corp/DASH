@@ -1,9 +1,11 @@
 # DASH
-### An AI Coding Agent for Your Terminal.
+### CLI Agent Source · V1.1.8
 
 ![DASH Banner](https://res.cloudinary.com/dznnkyjvh/image/upload/v1793004794/Blog/jxyq1orhgsllf6eu9gvh.png)
 
-**DASH** is an AI-powered terminal coding agent developed by [Neuro](https://neuro-corp.com). It helps developers understand codebases, build features, fix bugs, manage files, and execute development tasks directly from their terminal.
+**DASH** is an AI-powered terminal coding agent developed by [Neuro](https://neuro-corp.com). This repository publishes the CLI agent source code under the Apache License, Version 2.0.
+
+This is a curated CLI source repository. The private service/backend implementation, backend prompts, credentials, signing keys, and deployment configuration are not included. The Apache license applies to the source files in this repository; hosted services and separately distributed platform binaries remain subject to their own terms.
 
 Designed for developers who want an intelligent coding assistant with control over their workspace and development environment.
 
@@ -17,6 +19,7 @@ Designed for developers who want an intelligent coding assistant with control ov
 - **Project Development** – Build features, fix errors, and work on complete software projects.
 - **Multiple AI Models** – Choose from supported AI models and providers.
 - **Bring Your Own Provider** – Connect supported AI providers using your own API credentials.
+  - Supported providers: NVIDIA, OpenAI, Google Gemini, Anthropic Claude, and xAI Grok.
 
 ## 🤖 Free AI Models
 
@@ -39,6 +42,23 @@ Install DASH globally using npm:
 ```bash
 npm install -g "@neuro.corp/dash"
 ```
+
+## 🛠️ Build from source
+
+Requirements: [Bun](https://bun.sh/) and Node.js 20 or newer.
+
+```bash
+bun install --frozen-lockfile
+bun run dev
+```
+
+To compile the CLI for the current platform:
+
+```bash
+bun run build
+```
+
+The CLI can use the hosted DASH service or API credentials configured by the user. No credentials are included in this repository.
 
 Verify installation:
 

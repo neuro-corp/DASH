@@ -1,0 +1,12 @@
+{
+  "name": "@neuro.corp/dash-linux-x64",
+  "version": "1.1.8",
+  "description": "Linux x64 platform package for @neuro.corp/dash",
+  "license": "Apache-2.0",
+  "cpu": ["x64"],
+  "os": ["linux"],
+  "files": [
+    "dist/dash",
+    "LICENSE"
+  ]
+}
